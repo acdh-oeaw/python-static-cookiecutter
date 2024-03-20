@@ -1,0 +1,6 @@
+{
+    "directory_name": "{{ cookiecutter.directory_name }}",
+    "project_title": "{{ cookiecutter.project_title }}",
+    "github": "{{ cookiecutter.github }}",
+    "redmine_id": "{{ cookiecutter.redmine_id }}"
+}

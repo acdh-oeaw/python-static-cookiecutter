@@ -1,0 +1,10 @@
+{
+    "directory_name": "my-new-project",
+    "project_title": "My New Project",
+    "github": "https://github.com/acdh-oeaw/my-new-project",
+    "redmine_id": "18716",
+    "_copy_without_render": [
+        "*.html",
+        "*.j2"
+    ]
+}

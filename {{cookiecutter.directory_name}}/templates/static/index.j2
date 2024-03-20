@@ -1,0 +1,17 @@
+{% extends "templates/partials/base.j2" %}
+{% block title %}{{ project_data.project_title }}{% endblock title %}
+{% block page_description %}
+<meta name="description" content="whatever">
+{% endblock page_description %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center">{{ project_data.project_title }}</h1>
+    <div>
+        <p>
+            Hello my friend. Congrats for setting up <a href="https://github.com/acdh-oeaw/python-static-cookiecutter">python-static-cookiecutter</a>!
+        </p>
+    </div>
+
+
+{% endblock content %}
