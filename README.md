@@ -3,7 +3,7 @@
 
 ## Quickstart
 * Install the latest Cookiecutter if you haven't installed it yet (this requires Cookiecutter 1.7.0 or higher) by running `pip install -U cookiecutter`
-* To generate a new djangobaseproject-based django-project project run `cookiecutter gh:acdh-oeaw/djangobase-cookiecutter` and answer the following questions, see below:
+* To generate a python based static website run `cookiecutter gh:acdh-oeaw/python-static-cookiecutter` and answer the following questions, see below:
 
 ```json
 {
@@ -14,7 +14,5 @@
 } 
 ```
 
-* change into the new created repo, by default `$ my-new-project`
-* create a virtual env
-* install requierements `pip install -r requirements.txt`
-* start developing
+* change into the new created repo, by default `my-new-project`
+* follow the instructions in `my-new-project/README.md`
