@@ -1,7 +1,8 @@
 import os
 import glob
-import jinja2
 import json
+import jinja2
+import requests
 
 templateLoader = jinja2.FileSystemLoader(searchpath=".")
 templateEnv = jinja2.Environment(loader=templateLoader)
@@ -10,6 +11,15 @@ out_dir = "html"
 
 with open("project.json", "r", encoding="utf-8") as f:
     project_data = json.load(f)
+
+redmine_id = project_data["redmine_id"]
+imprint_url = f"https://imprint.acdh.oeaw.ac.at/{redmine_id}?locale=de"
+print(imprint_url)
+try:
+    r = requests.get(imprint_url)
+    project_data["imprint"] = r.content.decode("utf-8")
+except Exception as e:
+    project_data["imprint"] = e
 
 os.makedirs(out_dir, exist_ok=True)
 for x in glob.glob(f"{out_dir}/*.html"):

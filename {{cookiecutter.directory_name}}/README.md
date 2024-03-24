@@ -8,7 +8,7 @@ short description of the project
 * change into the project's root directory e.g. `cd {{cookiecutter.directory_name}}`
 * create a virtual environment e.g. `python -m venv venv` and activate it `source venv/bin/activate`
 * install required packages `pip install -r requirements.txt`
-* run `python build.py` to build the website
+* run `python build_static.py` to build the website
 * to test the result, change into `html` and start a python server `python -m http.server`
 
 
