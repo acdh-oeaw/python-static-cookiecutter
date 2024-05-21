@@ -5,6 +5,7 @@
     "redmine_id": "18716",
     "_copy_without_render": [
         "*.html",
-        "*.j2"
+        "*.j2",
+        "gh-pages.yml"
     ]
 }
